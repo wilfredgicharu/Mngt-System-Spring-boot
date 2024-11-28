@@ -40,6 +40,12 @@ public class Course {
         this.batches = batches;
     }
 
+    public Course(String courseName, String syllabus, String duration) {
+        this.courseName = courseName;
+        this.syllabus = syllabus;
+        this.duration = duration;
+    }
+
     public long getCourseId() {
         return courseId;
     }

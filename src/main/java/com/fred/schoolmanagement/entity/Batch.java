@@ -43,6 +43,12 @@ public class Batch {
         this.enrollmentSet = enrollmentSet;
     }
 
+    public Batch(String batchName, String startDate, Course course) {
+        this.batchName = batchName;
+        this.startDate = startDate;
+        this.course = course;
+    }
+
     public long getBatchId() {
         return batchId;
     }

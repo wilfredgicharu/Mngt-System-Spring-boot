@@ -80,6 +80,21 @@ public class Teacher {
         this.isDeleted = isDeleted;
     }
 
+    public Teacher(String name,
+                   String adress,
+                   String email,
+                   long phoneNumber,
+                   long idNumber,
+                   Subject subject,
+                   Role role,
+                   String encodedPassword,
+                   String accessToken,
+                   String resetToken,
+                   String verificationToken,
+                   boolean isEmailVerified,
+                   boolean isDeleted) {
+    }
+
     public long getTeacherId() {
         return teacherId;
     }
