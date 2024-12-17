@@ -64,7 +64,7 @@ public class AuthenticationTeacherImplementation implements AuthenticationTeache
 
             Subject subject = subjectExists.get();
 
-            Optional<Role> roleOptionalExists = roleRepository.findRoleByCode(teacherSaveDTO.getRoleCodes());
+            Optional<Role> roleOptionalExists = roleRepository.findByRoleCode(teacherSaveDTO.getRoleCodes());
             if (!roleOptionalExists.isPresent()){
                 return "Role with that code is not found";
             }

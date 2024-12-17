@@ -52,7 +52,7 @@ public class AuthenticationStudentServiceImplementation implements Authenticatio
 
         try {
             //check if the student exists
-            Optional<Student> studentExist = studentRepository.findByStudentIdNumber(studentSaveDTO.getIdNumber());
+            Optional<Student> studentExist = studentRepository.findByIdNumber(studentSaveDTO.getIdNumber());
 
             if (studentExist.isPresent()){
                 return ("Student with id " + studentSaveDTO.getIdNumber() + "Already exists !!");

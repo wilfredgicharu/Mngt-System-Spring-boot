@@ -3,6 +3,7 @@ package com.fred.schoolmanagement.entity;
 
 import jakarta.persistence.*;
 
+import java.util.Optional;
 import java.util.Set;
 
 @Entity
@@ -33,6 +34,12 @@ public class Stream {
         this.streamName = streamName;
         this.students = students;
     }
+
+    public Stream(long streamCode, String streamName) {
+        this.streamName = streamName;
+        this.streamCode = streamCode;
+    }
+
 
     public long getStreamId() {
         return streamId;
