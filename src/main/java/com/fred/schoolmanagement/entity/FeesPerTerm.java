@@ -40,6 +40,13 @@ public class FeesPerTerm {
         this.feeCharged = feeCharged;
     }
 
+    public FeesPerTerm(double term, long feeCharged, LocalDate termEndDate, LocalDate termStartDate) {
+        this.term = term;
+        this.feeCharged = feeCharged;
+        this.termEndDate = termEndDate;
+        this.termStartDate = termStartDate;
+    }
+
     public long getId() {
         return Id;
     }

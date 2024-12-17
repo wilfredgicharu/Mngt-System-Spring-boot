@@ -37,6 +37,13 @@ public class Enrollment {
         this.fee = fee;
     }
 
+    public Enrollment(Student student, Batch batch, String joinDate, int fee) {
+        this.student = student;
+        this.batch = batch;
+        this.joinDate = joinDate;
+        this.fee = fee;
+    }
+
     public long getEnrollmentId() {
         return enrollmentId;
     }

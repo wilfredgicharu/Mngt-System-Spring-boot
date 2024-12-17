@@ -14,4 +14,5 @@ public interface BatchService {
 
     String updateBatch(long id, BatchUpdateDTO batchUpdateDTO);
 
+    boolean deleteBatch(long id);
 }

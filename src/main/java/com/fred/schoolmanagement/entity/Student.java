@@ -109,6 +109,25 @@ public class Student {
         this.enrollments = enrollments;
     }
 
+    public Student(String admissionNumber,
+                   String name,
+                   String adress,
+                   String email,
+                   long phoneNumber,
+                   long idNumber,
+                   Stream stream,
+                   Dormitory currentDormitory,
+                   FeesPerTerm currentTerm,
+                   long totalFeeBilled,
+                   long totalPaidFee,
+                   String encodedPassword,
+                   String accessToken,
+                   String resetToken,
+                   String verificationToken,
+                   boolean isEmailVerified,
+                   boolean isDeleted) {
+    }
+
     public long getStudentId() {
         return studentId;
     }

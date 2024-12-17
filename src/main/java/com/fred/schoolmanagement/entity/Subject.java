@@ -26,6 +26,11 @@ public class Subject {
         this.subjectName = subjectName;
     }
 
+    public Subject(long subjectCode, String subjectName) {
+        this.subjectCode = subjectCode;
+        this.subjectName = subjectName;
+    }
+
     public long getSubjectId() {
         return subjectId;
     }

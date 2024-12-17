@@ -28,6 +28,11 @@ public class Dormitory {
         this.dormName = dormName;
     }
 
+    public Dormitory(long dormCode, String dormName) {
+        this.dormCode = dormCode;
+        this.dormName = dormName;
+    }
+
     public long getDormitoryId() {
         return dormitoryId;
     }

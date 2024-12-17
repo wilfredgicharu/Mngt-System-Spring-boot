@@ -4,6 +4,8 @@ import com.fred.schoolmanagement.dto.TeacherSaveDTO;
 
 public interface AuthenticationTeacher {
 
-    String addteacher(TeacherSaveDTO teacherSaveDTO);
+    String addTeacher(TeacherSaveDTO teacherSaveDTO);
+
+
 
 }
